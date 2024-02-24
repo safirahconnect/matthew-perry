@@ -1,0 +1,30 @@
+.awards-list span:first-of-type {
+  color: #bebebe;
+}
+
+.awards-list h3 {
+  margin-block: 0px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.awards-list h3::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 4px;
+  background: #fff;
+}
+
+.awards-list h3:before {
+  transition: width 0.3s;
+}
+
+.awards-list li:hover h3::before {
+  width: 20px;
+}
+
+.awards-list li + li {
+  margin-top: 2em;
+}

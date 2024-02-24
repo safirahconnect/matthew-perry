@@ -1,0 +1,84 @@
+:root {
+  --gap-spacing: 2rem;
+  --inner-spacing: 3.75em;
+}
+
+.container {
+  max-width: 1480px;
+  margin-inline: auto;
+  padding: var(--inner-spacing);
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(calc(800px * 999 - 100% * 999), 100%), 1fr)
+  );
+  gap: var(--gap-spacing);
+}
+
+.title {
+  font-family: "Playfair Display", "Times New Roman", Times, serif;
+  font-weight: 500;
+  color: #e6e6e6;
+  font-size: var(--font-lg);
+}
+
+h2.title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: #ffef00;
+}
+
+h3.title {
+  font-size: var(--font-md);
+}
+
+p {
+  color: #eee;
+  max-width: 60ch;
+  font-size: var(--font-md);
+}
+
+span,
+.theater p,
+.awards-list h3,
+footer p {
+  font-size: var(--font-sm);
+}
+
+blockquote p {
+  font-weight: 300;
+  font-style: oblique;
+}
+
+blockquote footer {
+  font-size: var(--font-xsm);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: left;
+  gap: 8px;
+  color: #f2f2f2;
+}
+
+blockquote footer::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 2px;
+  background: #ffef00;
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --inner-spacing: 2em;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --inner-spacing: 1.5em;
+    --gap-spacing: 1rem;
+  }
+}

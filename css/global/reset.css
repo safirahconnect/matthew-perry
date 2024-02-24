@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 100%/1.4 "Lato", Arial, Helvetica, sans-serif;
+  color: #fff;
+  background: #000;
+  margin: 0.5rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+blockquote,
+figure {
+  margin: 0px;
+}
+
+blockquote p {
+  margin-block: 0px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+h1,
+h2 {
+  color: #e6e6e6;
+}
+
+h3,
+p {
+  color: #eee;
+}

@@ -1,0 +1,113 @@
+/*Introduction*/
+
+.intro-bg {
+  background: #131313;
+}
+.intro {
+  position: relative;
+}
+
+.intro::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 64px;
+  background: url(../../img/dec/top-right.svg) no-repeat;
+  position: absolute;
+  right: 60px;
+  top: 60px;
+}
+
+.intro-pic {
+  background: #000;
+}
+
+.intro-pic h1 {
+  text-align: center;
+}
+
+.intro-pic figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: var(--font-sm);
+  margin-block: 1em;
+}
+
+.intro-pic figcaption::before,
+.intro-pic figcaption::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.intro-pic figcaption::before {
+  background: url("../../img/icones/star.svg") no-repeat;
+}
+
+.intro-pic figcaption::after {
+  background: url("../../img/icones/flower.svg") no-repeat;
+}
+
+.intro-quote {
+  align-self: end;
+}
+
+.intro-quote * + * {
+  margin-top: 1em;
+}
+
+.intro-quote a {
+  max-width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 1em 2em;
+  background: #ffef00;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.03rem;
+  font-size: var(--font-button);
+}
+
+.intro-quote a::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  background: url("../../img/dec/seta.svg") no-repeat;
+  transition: transform 0.5s;
+}
+
+.intro-quote a:hover {
+  background: #ebe200;
+}
+
+.intro-quote a:hover:after {
+  transform: translateX(4px);
+}
+
+@media (max-width: 1000px) {
+  .intro::before {
+    display: none;
+  }
+}
+
+/*Biography*/
+
+.bio h2 {
+  margin-block-start: 0px;
+}
+
+.bio p strong {
+  color: #fff;
+}
+
+.bio img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

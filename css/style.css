@@ -1,0 +1,20 @@
+/*CSS Reset*/
+@import "./global/reset.css";
+
+/*Global + Components Styling*/
+@import "./global/typography.css";
+@import "./global/components.css";
+
+/*Intro*/
+@import "./intro/intro.css";
+
+/*Works & Awards*/
+@import "./works-awards/works-intro.css";
+@import "./works-awards/works-list.css";
+@import "./works-awards/awards.css";
+
+/*Depositions*/
+@import "./depositions/depositions.css";
+
+/*Footer*/
+@import "./footer/footer.css";

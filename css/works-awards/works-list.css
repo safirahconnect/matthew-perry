@@ -1,0 +1,163 @@
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.works-list > * {
+  flex-grow: 1;
+  flex-basis: calc((32rem - 100%) * 999);
+}
+
+.works-list li + li {
+  margin-top: 1rem;
+}
+
+.television ul,
+.cinema ul {
+  padding-left: 32px;
+}
+
+.television ul,
+.cinema ul {
+  border-left: 4px solid #181818;
+}
+
+.television ul li,
+.cinema ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.television ul li::before,
+.cinema ul li::before {
+  position: absolute;
+  left: -56px;
+  font-size: var(--font-xsm);
+  padding: 0.1em;
+}
+
+.television ul li::before {
+  background: #c1c1c1;
+  color: #000;
+}
+
+.cinema ul li::before {
+  background: #111;
+  border: 1px solid #454545;
+  color: #fff;
+}
+
+.television ul li:first-child:not(:nth-child(2), :nth-child(3))::before,
+.cinema ul li:first-child::before {
+  content: "1994";
+}
+
+.television ul li:nth-child(4)::before {
+  content: "1995";
+}
+
+.television ul li:nth-child(5)::before,
+.cinema ul li:nth-child(2)::before {
+  content: "1997";
+}
+
+.cinema ul li:nth-child(3)::before {
+  content: "1998";
+}
+
+.cinema ul li:nth-child(4)::before {
+  content: "1999";
+}
+
+.cinema ul li:nth-child(5):not(:nth-child(6)):before {
+  content: "2000";
+}
+
+.television ul li:nth-child(6)::before {
+  content: "2001";
+}
+
+.television ul li:nth-child(7)::before,
+.cinema ul li:nth-child(7)::before {
+  content: "2002";
+}
+
+.television ul li:nth-child(8)::before {
+  content: "2003";
+}
+
+.television ul li:nth-child(9)::before,
+.cinema ul li:nth-child(8)::before {
+  content: "2004";
+}
+
+.cinema ul li:nth-child(9)::before {
+  content: "2007";
+}
+
+.cinema ul li:nth-child(10)::before {
+  content: "2008";
+}
+
+.cinema ul li:last-child::before {
+  content: "2009";
+}
+
+.television ul li:nth-child(12):not(:nth-child(13))::before {
+  content: "2011";
+}
+
+.television ul li:nth-child(14):not(:nth-child(15))::before {
+  content: "2012";
+}
+
+.television ul li:nth-child(16)::before:not(:nth-child(17)) {
+  content: "2014";
+}
+
+.television ul li:nth-child(18):not(:nth-child(19))::before {
+  content: "2015";
+}
+
+.television ul li:nth-child(20):not(:nth-child(21)):before {
+  content: "2017";
+}
+
+.television ul li:last-child::before {
+  content: "2021";
+}
+
+.theatre span {
+  color: #828282;
+}
+
+.theatre ul {
+  padding-left: 24px;
+}
+
+.theatre ul + h3 {
+  margin-block-start: 2em;
+}
+
+.theatre li > :last-child {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.theatre li > :last-child::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: absolute;
+  left: -24px;
+}
+
+.theatre p {
+  margin-block-start: 0px;
+}
