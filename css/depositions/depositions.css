@@ -5,7 +5,7 @@
 .depositions img {
   height: 100%;
   object-fit: cover;
-  object-position: left;
+  object-position: left -160px top 0;
 }
 
 .depositions-list li {
